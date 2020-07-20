@@ -39,9 +39,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 mDrawerLayout,
                 R.string.navigation_drawer_open,
                 R.string.navigation_drawer_close);
-        if (mDrawerLayout != null) {
-            mDrawerLayout.addDrawerListener(mToggle);
-        }
+
+        mDrawerLayout.addDrawerListener(mToggle);
+
         mToggle.syncState();
         if (mNavigationView !=null){
             mNavigationView.setNavigationItemSelectedListener(this);

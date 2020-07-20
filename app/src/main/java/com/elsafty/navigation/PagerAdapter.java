@@ -13,8 +13,8 @@ class PagerAdapter extends FragmentStatePagerAdapter {
     }
 
     @Override
-    public Fragment getItem(int i) {
-        switch (i){
+    public Fragment getItem(int fragment) {
+        switch (fragment){
             case 0:
                 return new FirstFragment();
             case 1:
